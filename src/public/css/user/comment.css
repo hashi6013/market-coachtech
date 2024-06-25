@@ -1,0 +1,76 @@
+.comment__inner {
+    padding: var(--v-space) 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 150px;
+}
+
+/* タイトル */
+.comment-about__title {
+    font-size: 3.0rem;
+    margin-top: 0;
+}
+
+/* ブランド名 */
+.comment-about__brand {
+    margin-top: -20px;
+}
+
+/* 値段 */
+.comment-about__price {
+    font-size: 1.8rem;
+}
+
+.icon-form__content {
+    display: flex;
+    gap: 30px;
+}
+
+/* 商品画像 */
+.comment-img__item {
+    max-width: 100%;
+    height: auto;
+}
+
+/* コメント入力フォーム */
+.comment-form__content-input {
+    background-color: #cbcbcb;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    height: 20px;
+    width: 100%;
+}
+
+.comment-form__content--reverse {
+    text-align: right;
+}
+
+.comment-form__content:last-of-type {
+    margin-top: 30px;
+}
+
+.comment-form__content-input--textarea {
+    background-color: #fff;
+    border: 1px solid #000;
+    height: 70px;
+    resize: none;
+}
+
+.comment-form__content-submit {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.comment-form__content-submit:hover {
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}

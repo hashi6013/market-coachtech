@@ -1,0 +1,85 @@
+.item-detail__inner {
+    padding: var(--v-space) 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 150px;
+}
+
+/* コメントページと共有 */
+/* タイトル */
+.item-detail-about__title {
+    font-size: 3.0rem;
+    margin-top: 0;
+}
+
+/* ブランド名 */
+.item-detail-about__brand {
+    margin-top: -20px;
+}
+
+/* 値段 */
+.item-detail-about__price {
+    font-size: 1.8rem;
+}
+
+/* フォーム */
+.item-detail-form__content {
+    display: flex;
+    gap: 30px;
+}
+
+/* 購入ページのボタンと共有 */
+.item-detail-about__link {
+    background-color: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 7px 60px;
+    text-decoration: none;
+}
+
+/* 共有ここまで */
+
+/* 商品説明 */
+.item-detail-about-description__title {
+    font-size: 2.4rem;
+}
+
+/* カテゴリー */
+.item-detail-about-category__title {
+    font-size: 1.6rem;
+}
+
+.item-detail-about-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.item-detail-about-category__text {
+    background-color: #cbcbcb;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+.item-detail-about-condition__title {
+    font-size: 1.6rem;
+}
+
+/* 商品画像 */
+.item-detail-img__item {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-detail-img-layout {
+    width: 240px;
+}
+
+.item-detail-img__link {
+    text-align: center;
+    width: 100%;
+}

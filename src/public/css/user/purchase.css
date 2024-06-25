@@ -1,0 +1,124 @@
+.purchase__inner {
+    padding: var(--v-space) 0;
+}
+
+/* グリッド */
+.purchase-form {
+    display: grid;
+    grid-template-rows: 120px 120px 20px 120px;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* 商品名、金額、画像 */
+
+.purchase-form__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 50px;
+    /* background-color: antiquewhite; */
+}
+
+.purchase-form__item-price {
+    font-size: 1.7rem;
+}
+
+/* 支払方法 */
+
+.purchase-form__payment {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.purchase-form__payment-title {
+    font-size: 1.6rem;
+    padding-left: 40px;
+}
+
+.purchase-form__payment-item-link {
+    color: #007eff;
+    font-size: 1.6rem;
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+
+/* 配送先 */
+
+.purchase-form__address {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.purchase-form__address-title {
+    font-size: 1.6rem;
+    padding-left: 40px;
+}
+
+.purchase-form__address-item-link {
+    color: #007eff;
+    font-size: 1.6rem;
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+/* 購入ボタン */
+.purchase-form__button {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    /* background-color: blue; */
+}
+
+.purchase-form__button-submit {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+/* 購入情報確認画面 */
+.purchase-form__confirm {
+    border: 1px solid #5e5e5e;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    /* background-color: aqua; */
+    /* background-color: yellow; */
+}
+
+.purchase-form__confirm-list {
+    margin: 0;
+    padding: 30px 7px;
+    width: 100%;
+}
+
+.purchase-form__confirm-list-flex {
+    display: flex;
+    line-height: 3.0;
+}
+
+.purchase-form__confirm-list-title {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 50%;
+}
+
+.purchase-form__confirm-list-description {
+    font-size: 1.6rem;
+    text-align: left;
+    width: 50%;
+}

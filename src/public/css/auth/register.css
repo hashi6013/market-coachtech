@@ -1,0 +1,84 @@
+/* ヘッダー部分 */
+.header-form {
+    display: none;
+}
+
+.nav {
+    display: none;
+}
+
+
+/* タイトル（会員登録） */
+.register__title {
+    font-size: 2.4rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/* フォーム */
+.register-form__content {
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto 0;
+}
+
+.register-form__label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.register-form__input {
+    display: block;
+    height: 35px;
+    width: 100%;
+}
+
+.register-form__password {
+    margin-top: 30px;
+}
+
+
+/* 登録ボタン */
+.register-form__button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.register__button-submit {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    height: 35px;
+    width: 100%;
+}
+
+.register__button-submit:hover {
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+/* リンク */
+.register__link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register__link-item {
+    color: #007eff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* エラーメッセージ */
+.register-form__error {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+}

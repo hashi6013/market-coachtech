@@ -1,0 +1,69 @@
+.mypage__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.mypage__header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+}
+
+.mypage__title {
+    margin-right: 150px;
+}
+
+.mypage__link {
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    text-decoration: none;
+    position: absolute;
+    right: 200px;
+}
+
+.mypage__content {
+    padding-top: 20px;
+}
+
+.mypage__content-link-item {
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mypage__content-link-item:first-of-type {
+    margin-left: 150px;
+}
+
+.mypage__content-link-item--purchase {
+    color: var(--sub-color);
+    margin-left: 80px;
+}
+
+.mypage__content-link::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #7b7777;
+    margin-top: 10px;
+}
+
+.mypage__card-layout {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 30px;
+}
+
+.mypage__card-img {
+    margin: 0 auto;
+}

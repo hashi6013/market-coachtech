@@ -1,0 +1,108 @@
+.sell__title {
+    text-align: center;
+}
+
+/* フォームの外枠 */
+.sell-form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ラベル */
+.sell-form__content-label {
+    font-weight: 600;
+}
+
+/* 商品画像の枠 */
+.sell-form__content-image {
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
+    height: 80px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* 商品画像を選択するボタン */
+.sell-form__content-label-image {
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px 4px;
+    font-weight: 600;
+}
+
+/* inputタグ */
+.sell-form__content-input {
+    display: block;
+    height: 25px;
+    width: 100%;
+}
+
+/* 商品画像のinputタグを非表示にする */
+.sell-form__content-input--image {
+    display: none;
+}
+
+/* 見出し */
+.sell-form__title,
+.sell-form__detail {
+    color: #7b7777;
+    font-size: 1.7rem;
+}
+
+/* 見出しの下線 */
+.sell-form__title::after,
+.sell-form__detail::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #7b7777;
+    margin-top: 10px;
+}
+
+/* inputを囲む */
+.sell-form__layout-inner {
+    margin-top: 10px;
+}
+
+/* ボタンの外枠 */
+.sell-form__button {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* 出品ボタン */
+.sell-form__button-submit {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    height: 30px;
+    width: 100%;
+}
+
+.sell-form__content-input--price:focus {
+    padding-left: 20px;
+}
+
+.sell-form__content-label--price {
+    position: relative;
+}
+
+.sell-form__content-label--price::after {
+    content: '￥';
+    position: absolute;
+    top: 23px;
+    right: 40px;
+    transform: translateY(1px);
+}

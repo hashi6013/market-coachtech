@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+figure {
+    margin: 0;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+i {
+    font-size: 1.6rem;
+}
+
+:root {
+    /* padding */
+    --v-space: clamp(30px, 9vw, 50px);
+    /* color */
+    --red: #f74e4a;
+    --gray: #949394;
+    /* style */
+    --main-color: var(--red);
+    --sub-color: var(--gray);
+}
+
+/* 他のページと共有 */
+.w__inner {
+    width: min(92%, 1230px);
+    margin: auto;
+}
+
+/* ここまで */
+
+.header {
+    background-color: #000;
+    height: 60px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-form__input {
+    width: 300px;
+}
+
+.header-form__input::placeholder {
+    padding-left: 20px;
+    color: #000;
+}
+
+.header-form__input,
+.header-form__submit {
+    height: 30px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav__list-item-link {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__list-item-link:hover {
+    background-color: #5e5e5e;
+}
+
+.nav__list-item-link--white {
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+
+.nav__list-item-link--white:hover {
+    background-color: rgba(245, 245, 245, 0.9);
+}
