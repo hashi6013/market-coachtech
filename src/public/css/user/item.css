@@ -83,3 +83,14 @@
     text-align: center;
     width: 100%;
 }
+
+/* お気に入り */
+
+.item-detail-form__content-link i {
+    color: #ecb727;
+}
+
+.item-detail-form__content-link--favorite i {
+    color: #000;
+}
+

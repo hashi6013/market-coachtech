@@ -7,6 +7,7 @@ use App\Http\Controllers\AddressEditController;
 use App\Http\Controllers\MypageController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FavoriteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,8 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [ItemController::class, 'index']);
 Route::get('/search', [ItemController::class, 'search']);
-Route::get('/item/favorite/{id}', [FavoriteController::class, 'favorite']);
-Route::get('/item/unlike/{id}', [FavoriteController::class, 'unlike']);
+Route::get('/item/favorite/{id}', [FavoriteController::class, 'favorite'])->name('item.favorite');
+Route::get('/item/unlike/{id}', [FavoriteController::class, 'unlike'])->name('item.unlike');
 Route::get('/item/{item_id}', [ItemController::class, 'itemDetail']);
 Route::get('/purchase/{item_id}', [PurchaseController::class, 'purchase']);
 Route::get('/sell', [ItemController::class, 'sell']);

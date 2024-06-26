@@ -14,10 +14,18 @@
             <form class="item-detail-form" action="#">
                 @csrf
                 <div class="item-detail-form__content">
-                    <span class="item-detail-form__content-item">
-                        <i class="fa-regular fa-star"></i>
-                    </span>
-                    <span class="item-detail-form__content-item item-form__item--favorite">
+                    @if(Auth::check())
+                        @if($item_detail->favorite_by_auth_user())
+                        <a class="item-detail-form__content-link" href="{{ route('item.unlike', ['id' => $item_detail->id]) }}">
+                            <i class="fa-regular fa-star"></i>
+                        </a>
+                        @else
+                        <a class="item-detail-form__content-link item-detail-form__content-link--favorite" href="{{ route('item.favorite', ['id' => $item_detail->id]) }}">
+                            <i class="fa-regular fa-star"></i>
+                        </a>
+                        @endif
+                    @endif
+                    <span class="item-detail-form__content-comment">
                         <i class="fa-regular fa-comment"></i>
                     </span>
                 </div>
