@@ -27,9 +27,9 @@
                 <ul class="nav__list">
                     @if(Auth::check())
                     <li class="nav__list-item">
-                        <form action="/logout" method="post">
+                        <form class="nav-form" action="/logout" method="post">
                             @csrf
-                            <button>ログアウト</button>
+                            <button class="nav-form__logout">ログアウト</button>
                         </form>
                     <li class="nav__list-item"><a class="nav__list-item-link" href="#">マイページ</a></li>
                     @else
