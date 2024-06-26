@@ -68,7 +68,7 @@ i {
     font-size: 1.5rem;
     vertical-align: middle;
     text-align: center;
-    padding: 5px 15px;
+    padding: 1px 10px;
     text-decoration: none;
     color: #fff;
 }
@@ -85,4 +85,15 @@ i {
 
 .nav__list-item-link--white:hover {
     background-color: rgba(245, 245, 245, 0.9);
+}
+
+.nav-form__logout {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-form__logout:hover {
+    background-color: #5e5e5e;
 }
