@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSoldItemsTable extends Migration
+class CreateConditionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class CreateSoldItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sold_items', function (Blueprint $table) {
+        Schema::create('conditions', function (Blueprint $table) {
             $table->id();
+            $table->string('condition');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateSoldItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sold_items');
+        Schema::dropIfExists('conditions');
     }
 }
