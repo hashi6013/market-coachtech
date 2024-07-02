@@ -95,6 +95,9 @@
 }
 
 /* コメント */
+.item-detail-form__content-comment {
+    color: #000;
+}
 .item-detail-form__content-comment:visited {
     color: transparent;
 }

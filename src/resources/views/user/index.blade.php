@@ -12,10 +12,12 @@
             <a class="items__tab-link" href="#">
                 <span class="items__tab-link-text">おすすめ</span>
             </a>
-            <a class="items__tab-link" href="#">
+            @foreach($favorite as $user_favorite)
+            <a class="items__tab-link" href="/list?id={{$user_favorite->id}}">
                 <!-- クリックするとお気に入りリストに飛ぶ -->
                 <span class="items__tab-link-text items__tab-link-text--gray">マイリスト</span>
             </a>
+            @endforeach
         </div>
 
         <div class="items-card">

@@ -28,6 +28,7 @@ Route::get('/item/{item_id}', [ItemController::class, 'itemDetail']);
 Route::get('/purchase/{item_id}', [PurchaseController::class, 'purchase']);
 Route::get('/sell', [ItemController::class, 'sell']);
 Route::get('/comment', [CommentController::class, 'comment']);
+Route::get('/list', [ItemController::class, 'list']);
 
 // 仮
 Route::get('/purchase/address/{item_id}', [AddressEditController::class, 'addressEdit']);
