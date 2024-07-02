@@ -31,7 +31,7 @@
                             @csrf
                             <button class="nav-form__logout">ログアウト</button>
                         </form>
-                    <li class="nav__list-item"><a class="nav__list-item-link" href="#">マイページ</a></li>
+                    <li class="nav__list-item"><a class="nav__list-item-link" href="/mypage">マイページ</a></li>
                     @else
                     <li class="nav__list-item"><a class="nav__list-item-link" href="/login">ログイン</a></li>
                     <li class="nav__list-item"><a class="nav__list-item-link" href="/register">会員登録</a></li>

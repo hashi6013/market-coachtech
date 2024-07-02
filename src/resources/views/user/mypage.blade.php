@@ -8,7 +8,7 @@
 <section class="mypage">
     <div class="mypage__inner">
         <div class="mypage__header">
-            <h1 class="mypage__title">ユーザー名</h1>
+            <h1 class="mypage__title">{{$users->name}}</h1>
             <a class="mypage__link" href="#">プロフィールを編集</a>
         </div>
         <div class="mypage__content">
