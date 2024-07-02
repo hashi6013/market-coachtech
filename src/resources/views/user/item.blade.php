@@ -25,9 +25,12 @@
                         </a>
                         @endif
                     @endif
-                    <a class="item-detail-form__content-comment" href="/comment?id={{$item_detail->id}}">
-                        <i class="fa-regular fa-comment"></i>
-                    </a>
+
+                    @if(Auth::check())
+                        <a class="item-detail-form__content-comment" href="/comment?id={{$item_detail->id}}">
+                            <i class="fa-regular fa-comment"></i>
+                        </a>
+                    @endif
                 </div>
             </form>
             <a class="item-detail-about__link" href="/purchase/{{$item_detail->id}}">

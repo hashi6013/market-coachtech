@@ -94,3 +94,7 @@
     color: #000;
 }
 
+/* コメント */
+.item-detail-form__content-comment:visited {
+    color: transparent;
+}
