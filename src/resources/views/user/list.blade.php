@@ -5,8 +5,16 @@
 @endsection
 
 @section('content')
-@foreach($favorites as $favorite)
-<p>{{$favorite->user_id}}</p>
-@endforeach
+<section class="list">
+    <div class="list__inner w__inner">
+    @foreach($favorites as $favorite)
+        @foreach($image as $favorite_image)
+        <figure>
+            <img src="{{ asset('storage/'.$favorite_image->item->image_url) }}" alt="">
+        </figure>
+        @endforeach
+    @endforeach
+    </div>
+</section>
 
 @endsection

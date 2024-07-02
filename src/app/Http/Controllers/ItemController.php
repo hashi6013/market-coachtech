@@ -53,6 +53,7 @@ class ItemController extends Controller
     {
         $users = Auth::user();
         $favorites = Favorite::where('user_id', '=', Auth::user()->id)->get();
-        return view('user.list', compact('favorites', 'users'));
+        $image = Favorite::with('item')->get();
+        return view('user.list', compact('favorites', 'users', 'image'));
     }
 }
