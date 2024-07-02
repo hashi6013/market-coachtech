@@ -27,9 +27,10 @@ Route::get('/item/unlike/{id}', [FavoriteController::class, 'unlike'])->name('it
 Route::get('/item/{item_id}', [ItemController::class, 'itemDetail']);
 Route::get('/purchase/{item_id}', [PurchaseController::class, 'purchase']);
 Route::get('/sell', [ItemController::class, 'sell']);
+Route::get('/comment', [CommentController::class, 'comment']);
 
 // 仮
 Route::get('/purchase/address/{item_id}', [AddressEditController::class, 'addressEdit']);
 Route::get('/mypage', [MypageController::class, 'mypageIndex']);
 Route::get('/mypage/profile', [MypageController::class, 'update']);
-Route::get('/comment', [CommentController::class, 'comment']);
+

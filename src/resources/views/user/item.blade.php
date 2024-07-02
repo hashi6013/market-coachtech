@@ -25,9 +25,9 @@
                         </a>
                         @endif
                     @endif
-                    <span class="item-detail-form__content-comment">
+                    <a class="item-detail-form__content-comment" href="/comment?id={{$item_detail->id}}">
                         <i class="fa-regular fa-comment"></i>
-                    </span>
+                    </a>
                 </div>
             </form>
             <a class="item-detail-about__link" href="/purchase/{{$item_detail->id}}">
@@ -44,13 +44,9 @@
                 <section class="item-detail-about-category">
                     <div class="item-detail-about-layout">
                         <h3 class="item-detail-about-category__title">カテゴリー</h3>
-                        <!-- 以下にカテゴリー -->
                         @foreach($categories as $category)
                         <p>{{ $category->category->name }}</p>
-
                         @endforeach
-
-                        <!-- <p class="item-detail-about-category__text">メンズ</p> -->
                     </div>
                 </section>
                 <section class="item-detail-about-condition">
