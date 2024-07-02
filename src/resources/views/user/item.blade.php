@@ -45,7 +45,12 @@
                     <div class="item-detail-about-layout">
                         <h3 class="item-detail-about-category__title">カテゴリー</h3>
                         <!-- 以下にカテゴリー -->
-                        <p class="item-detail-about-category__text">メンズ</p>
+                        @foreach($categories as $category)
+                        <p>{{ $category->category->name }}</p>
+
+                        @endforeach
+
+                        <!-- <p class="item-detail-about-category__text">メンズ</p> -->
                     </div>
                 </section>
                 <section class="item-detail-about-condition">

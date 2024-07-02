@@ -34,8 +34,10 @@ class ItemController extends Controller
 
     public function itemDetail($id)
     {
+
         $item_detail = Item::find($id);
-        return view('user.item', compact('item_detail'));
+        $categories = categoryItem::where('item_id', '=', $id)->get();
+        return view('user.item', compact('item_detail', 'categories'));
     }
 
 
