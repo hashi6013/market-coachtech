@@ -12,12 +12,17 @@
             <a class="items__tab-link" href="#">
                 <span class="items__tab-link-text">おすすめ</span>
             </a>
-            @foreach($favorite as $user_favorite)
-            <a class="items__tab-link" href="/list?id={{$user_favorite->id}}">
+            @if(Auth::check())
+            <a class="items__tab-link" href="">
+                <span class="items__tab-link-text items__tab-link-text--gray">マイリスト</span>
+            </a>
+            @else
+            <a class="items__tab-link" href="/login">
                 <!-- クリックするとお気に入りリストに飛ぶ -->
                 <span class="items__tab-link-text items__tab-link-text--gray">マイリスト</span>
             </a>
-            @endforeach
+            @endif
+
         </div>
 
         <div class="items-card">

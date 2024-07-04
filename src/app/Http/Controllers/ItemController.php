@@ -15,9 +15,7 @@ class ItemController extends Controller
     public function index()
     {
         $items = Item::with('condition')->get();
-        $users = Auth::user();
-        $favorite = Favorite::where('user_id', '=', Auth::user()->id)->get();
-        return view('user.index', compact('items', 'users', 'favorite'));
+        return view('user.index', compact('items'));
     }
 
     public function search(Request $request)
@@ -43,17 +41,8 @@ class ItemController extends Controller
         return view('user.item', compact('item_detail', 'categories'));
     }
 
-
     public function sell()
     {
         return view('user.sell');
-    }
-
-    public function list()
-    {
-        $users = Auth::user();
-        $favorites = Favorite::where('user_id', '=', Auth::user()->id)->get();
-        $image = Favorite::with('item')->get();
-        return view('user.list', compact('favorites', 'users', 'image'));
     }
 }
