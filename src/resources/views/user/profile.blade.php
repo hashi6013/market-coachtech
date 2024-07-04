@@ -8,7 +8,7 @@
 <section class="profile">
     <div class="profile__inner w__inner">
         <h1 class="profile__title">プロフィール設定</h1>
-        <form class="profile-form" action="">
+        <form class="profile-form" action="" method="post">
             @csrf
             <div class="profile-form__content">
                 <p class="profile-form__image">

@@ -9,7 +9,7 @@
     <div class="mypage__inner">
         <div class="mypage__header">
             <h1 class="mypage__title">{{$users->name}}</h1>
-            <a class="mypage__link" href="#">プロフィールを編集</a>
+            <a class="mypage__link" href="/mypage/profile">プロフィールを編集</a>
         </div>
         <div class="mypage__content">
             <div class="mypage__content-link">
