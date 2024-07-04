@@ -8,7 +8,7 @@
 <section class="list">
     <div class="list__inner w__inner">
    
-        <p>{{$favorites->id}}</p>
+        
     
     </div>
 </section>
