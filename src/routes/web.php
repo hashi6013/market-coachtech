@@ -34,4 +34,5 @@ Route::get('/list', [ItemController::class, 'list']);
 Route::get('/purchase/address/{item_id}', [AddressEditController::class, 'addressEdit']);
 Route::get('/mypage', [MypageController::class, 'mypageIndex']);
 Route::get('/mypage/profile', [MypageController::class, 'update']);
+Route::post('/mypage/done', [MypageController::class, 'store']);
 
