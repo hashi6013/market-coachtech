@@ -43,6 +43,23 @@ class ItemController extends Controller
 
     public function sell()
     {
-        return view('user.sell');
+        $categories = Category::all();
+        $conditions = Condition::all();
+        return view('user.sell', compact('categories', 'conditions'));
+    }
+
+    public function sellDone(Request $request)
+    {
+        $request['user_id'] = Auth::user()->id;
+        $sell = $request->only([
+            'user_id',
+            'condition_id',
+            'name',
+            'price',
+            'description',
+            'image_url',
+        ]);
+        Item::create($sell);
+        return view('user.done');
     }
 }

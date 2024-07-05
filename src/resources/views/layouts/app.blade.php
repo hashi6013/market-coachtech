@@ -36,7 +36,11 @@
                     <li class="nav__list-item"><a class="nav__list-item-link" href="/login">ログイン</a></li>
                     <li class="nav__list-item"><a class="nav__list-item-link" href="/register">会員登録</a></li>
                     @endif
-                    <li class="nav__list-item"><a class="nav__list-item-link nav__list-item-link--white" href="#">出品</a></li>
+                    @if(Auth::check())
+                    <li class="nav__list-item"><a class="nav__list-item-link nav__list-item-link--white" href="/sell">出品</a></li>
+                    @else
+                    <li class="nav__list-item"><a class="nav__list-item-link nav__list-item-link--white" href="/login">出品</a></li>
+                    @endif
                 </ul>
             </nav>
         </div>

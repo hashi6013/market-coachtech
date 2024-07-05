@@ -32,6 +32,6 @@ class MypageController extends Controller
             'building',
         ]);
         Profile::create($profile);
-        return view('user.done');
+        // return view('user.done');
     }
 }
